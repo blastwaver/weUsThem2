@@ -1,0 +1,11 @@
+const UBER = require('./uber');
+const TSLA = require('./tsla');
+const INTC = require('./intc');
+const GE = require('./ge');
+const FL = require('./fl');
+const FB = require('./fb');
+const CRM = require('./crm');
+const BABA = require('./baba');
+const AMD = require('./amd');
+const ALXN = require('./alxn');
+module.exports = {UBER, TSLA, INTC, GE, FL, FB, CRM, BABA, AMD, ALXN};

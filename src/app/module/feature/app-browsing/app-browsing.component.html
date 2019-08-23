@@ -1,0 +1,10 @@
+<div class="browsing-container">
+    <h1>Browsing</h1>
+    <button mat-raised-button *ngFor="let char of alphabet" (click)="onClickButton(char)" [disabled]="buttonDisable">{{char | uppercase }}</button>
+    <button mat-raised-button  (click)="onClickButton()" [disabled]="buttonDisable">ALL</button>
+    <mat-nav-list>
+        <mat-list-item *ngFor="let sym of showingSymbol">
+            <a matLine (click)="onClickSymbol(sym)">{{ sym }}</a>
+        </mat-list-item>
+      </mat-nav-list>
+</div>

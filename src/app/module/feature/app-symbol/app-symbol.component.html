@@ -1,0 +1,6 @@
+<div class="symbol-container">
+    <h1>{{symbol}}</h1>
+    <ng-container *ngIf="data && displayedColumns">
+    <app-table-pagination [data]="data" [displayedColumns]="displayedColumns"></app-table-pagination>
+    </ng-container>
+</div>

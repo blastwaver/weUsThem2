@@ -1,5 +1,5 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
+<!-- <div style="text-align:center">
   <h1>
     Welcome to {{ title }}!
   </h1>
@@ -18,4 +18,15 @@
   </li>
 </ul>
 
-<router-outlet></router-outlet>
+<router-outlet></router-outlet> -->
+<app-nav [linkItems]="menuList">
+    <router-outlet></router-outlet>
+</app-nav>
+
+<!-- <div style="margin-bottom: 10px;">
+  <app-table-pagination [data]="data" [displayedColumns] ="displayedColumns" [filter]="true"></app-table-pagination>
+</div>
+
+<div style="margin-bottom: 10px;">
+  <app-table-selection [data]="data" [displayedColumns] ="displayedColumns" [filter]="true"></app-table-selection>
+</div> -->
